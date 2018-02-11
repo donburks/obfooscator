@@ -1,0 +1,24 @@
+{
+  "name": "obfooscator",
+  "version": "1.0.0",
+  "description": "A package to convert e-mail addresses to obfuscated strings containing HTML entities. Deters e-mail harvesting from page scrapers.",
+  "main": "obfuscator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/donburks/obfooscator.git"
+  },
+  "keywords": [
+    "email",
+    "obfuscation",
+    "unicode"
+  ],
+  "author": "Don Burks <don@donburks.com> (https://donburks.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donburks/obfooscator/issues"
+  },
+  "homepage": "https://github.com/donburks/obfooscator#readme"
+}
