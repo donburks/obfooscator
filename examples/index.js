@@ -1,6 +1,5 @@
-const obfuscator = require('./obfuscator');
+const obfuscator = require('../obfooscator');
 
-let email = 'don@donburks.com';
+let email = 'sample@example.com';
 
-console.log(email);
 console.log(obfuscator(email));
