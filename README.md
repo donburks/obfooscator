@@ -1,6 +1,6 @@
 # Obfooscator
 
-The purpose of this module is to obfuscate email addresses that you would have in HTML pages, to deter those email addresses from being harvested by page scrapers. 
+The purpose of this module is to obfuscate email addresses that you would have in HTML pages, to deter those email addresses from being harvested by page scrapers. Currently, this is only for front-end development, I will be updating/enabling for back-end dev soon enough.
 
 ## Installation
 
@@ -10,7 +10,7 @@ The purpose of this module is to obfuscate email addresses that you would have i
 
 ```javascript
 
-const obfooscator = require('obfooscator');
+import {obfooscator} from 'obfooscator';
 
 let email = 'sample@example.com';
 

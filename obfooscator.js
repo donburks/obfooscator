@@ -1,6 +1,6 @@
 const unicode = require('./unicode_lookup');
 
-module.exports = function(email) {
+function obfooscator(email) {
   if (!email) {
     return "";
   }
@@ -17,3 +17,7 @@ module.exports = function(email) {
     .replace(pattern1, unicode[letter1])
     .replace(pattern2, unicode[letter2]);
 };
+
+export default obfooscator;
+
+//module.exports.obfooscator = obfooscator;

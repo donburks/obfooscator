@@ -1,6 +1,6 @@
 {
   "name": "obfooscator",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A package to convert e-mail addresses to obfuscated strings containing HTML entities. Deters e-mail harvesting from page scrapers.",
   "main": "obfuscator.js",
   "scripts": {
