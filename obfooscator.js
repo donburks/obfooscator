@@ -14,10 +14,10 @@ function obfooscator(email) {
 
   return email
     .replace("@", "&#64;")
-    .replace(pattern1, unicode[letter1])
-    .replace(pattern2, unicode[letter2]);
+    .replace(pattern1, `<span>${unicode[letter1]}</span>`)
+    .replace(pattern2, `<span>${unicode[letter2]}</span>`);
 };
 
-export default obfooscator;
+//export default obfooscator;
 
-//module.exports.obfooscator = obfooscator;
+module.exports.obfooscator = obfooscator;
