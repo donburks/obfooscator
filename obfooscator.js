@@ -1,6 +1,6 @@
 const unicode = require('./unicode_lookup');
 
-function obfooscator(email) {
+function obfooscator(email, useUnicode=true) {
   if (!email) {
     return "";
   }
@@ -14,10 +14,8 @@ function obfooscator(email) {
 
   return email
     .replace("@", "&#64;")
-    .replace(pattern1, `<span>${unicode[letter1]}</span>`)
-    .replace(pattern2, `<span>${unicode[letter2]}</span>`);
+    .replace(pattern1, unicode(letter1, useUnicode))
+    .replace(pattern2, unicode(letter2, useUnicode));
 };
 
-//export default obfooscator;
-
-module.exports.obfooscator = obfooscator;
+module.exports = obfooscator;

@@ -1,4 +1,4 @@
-module.exports = {
+const entities = {
   a: "&#97;",
   b: "&#98;",
   c: "&#99;",
@@ -36,4 +36,20 @@ module.exports = {
   8: "&#56;",
   9: "&#57;"
 };
+
+module.exports = function(str, useUnicode = true) {
+  let uni = '';
+  if (useUnicode) {
+    let unicode = str.charCodeAt(0).toString(16).toUpperCase();
+    while (unicode.length < 4) {
+      unicode = '0' + unicode;
+    }
+    unicode = '\\u' + unicode;
+    uni += unicode;
+  } else {
+    uni += entities[str];
+  }
+
+  return uni;
+}
 
